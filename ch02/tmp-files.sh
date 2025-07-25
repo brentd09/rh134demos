@@ -15,6 +15,10 @@
 echo d /demo/tmp 0755 root root - > /etc/tmpfiles.d/demo.conf
 echo r /demo/tmp/* - - - 1m >>  /etc/tmpfiles.d/demo.conf
 
+systemd-tmpfiles --create
+systemd-tmpfiles --clean
+
+# execute a reboot to remove the stale files
 
 # Here is what the time specifiers mean:
 # --------------------------------------
