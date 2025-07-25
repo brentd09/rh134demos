@@ -7,3 +7,9 @@
 ```bash
 cp vimrc ~/.vimrc
 ```
+
+### To configure git run 
+
+```bash
+bash git-setup.sh
+```
