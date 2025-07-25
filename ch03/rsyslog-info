@@ -1,0 +1,19 @@
+#!/bin/bash
+
+cat /etc/rsyslog.conf
+
+# module(load="imjournal" 
+# This line allow rsyslog to read journal log files so they can be stored in syslog
+# directories under /var/log
+
+# Log File       Path                  Contents                       Source
+# -------------------------------------------------------------------------------------------------------
+# journal        /var/log/journal/     Binary logs (system-wide)      systemd-journald
+# secure         /var/log/secure       Auth, sudo, SSH                sshd, sudo, PAM
+# messages       /var/log/messages     General system logs            rsyslog, kernel
+# cron           /var/log/cron         Scheduled task logs            crond
+# boot.log       /var/log/boot.log     Boot process messages          systemd
+# maillog        /var/log/maillog      Mail server activity           postfix, sendmail
+# dmesg          dmesg command         Kernel ring buffer             Kernel
+# Xorg.0.log     /var/log/Xorg.0.log   Graphical server logs          Xorg
+# dnf.log        /var/log/dnf.log      Package management history     dnf
