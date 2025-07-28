@@ -7,8 +7,9 @@ cat /etc/rsyslog.conf
 # directories under /var/log
 
 # Log File       Path                  Contents                       Source
-# -------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------
 # journal        /var/log/journal/     Binary logs (system-wide)      systemd-journald
+# --------------------------------------------------------------------------------------
 # secure         /var/log/secure       Auth, sudo, SSH                sshd, sudo, PAM
 # messages       /var/log/messages     General system logs            rsyslog, kernel
 # cron           /var/log/cron         Scheduled task logs            crond
